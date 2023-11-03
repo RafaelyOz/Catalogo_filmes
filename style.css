@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Montserrat', sans-serif, Helvetica, sans-serif;
+}
+.logotipo {
+    height: 50px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.cineUnity{
+    color: #d83dff;
+    font-size: 30px;
+}
+.nav-header{
+    
+        background-color: #1a1535; 
+        color: #fff; 
+        padding: 30px; 
+        display: flex;
+        justify-content: space-between;
+        
+}
+.lupa{
+    height: 20px;
+    width: 20px;
+}
+.search-box{
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background:#1d1741;
+    height: 50px;
+    width: 500px;
+    padding: 10px;
+    border-radius: 60px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search-text{
+    border: none;
+    background:none ;
+    outline: none;
+    padding: 0;
+    color: #fff;
+    font-size: 16px;
+    line-height: 40px;
+    
+    
+}
+::-webkit-input-placeholder{
+    color: #403876;
+}
+.search-btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background:#1a1535;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2a244f;
+}
+.search-btn:hover {
+    background-color: #35304a; 
+}
+.nav-items{
+    font-size: 15px;
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    margin-top: 5px;
+    margin-left: 50px;
+    color: #d83dff;
+}
