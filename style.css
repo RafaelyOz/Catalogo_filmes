@@ -120,21 +120,24 @@ body{
 
 .overlay {
     position: absolute;
-    top: 50%; 
-    left: 0; 
-    transform: translateY(-55%); 
-    width: 50%;
-    background: rgba(3, 3, 3, 0.862); 
+    top: 0; 
+    left: 0;
+    transform: translateY(0); 
+    width: 100%; 
+    background: rgba(14, 11, 28, 0.85); 
     color: #fff;
     padding: 20px;
     opacity: 0;
     transition: opacity 0.3s;
-    text-align: left; 
+    text-align: left;
 }
 
+
 .slide:hover .overlay {
-    opacity: 1; 
+    opacity: 1;
+    height: 100%; 
 }
+
 
 .title-filme{
     font-size: 40px;
@@ -153,7 +156,7 @@ body{
 .add-list-btn {
     display: inline-block;
     padding: 10px 20px; 
-    background-color: #1d1741; 
+    background-color: #1c163e; 
     color: #fff; 
     border: none;
     border-radius: 15px;
@@ -226,4 +229,175 @@ body{
     bottom: 20px;
     display: flex;
     justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-header {
+        padding: 10px;
+    }
+
+    .nav-items {
+        margin-left: 10px;
+    }
+
+    .search-box {
+        top: 80px; 
+        width: 80%;
+    }
+    .descricao {
+        width: 100%;
+        font-size: 16px; 
+    }
+    .slide img {
+        height: auto; 
+    }
+
+}
+
+
+@media screen and (max-width: 480px) {
+    .nav-header {
+        padding: 5px;
+    }
+
+    .search-box {
+        top: 60px; 
+        width: 90%;
+    }
+    .descricao {
+        font-size: 14px; 
+    }
+}
+
+.tab {
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #0b0b0b;
+    background-color: #28205a;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 10px;
+    color: #fff;
+}
+
+
+.tab.active {
+    background-color: rgb(63, 31, 86);
+    color: #fff;
+}
+
+
+.filmes {
+   display: none;
+    padding: 20px;
+    
+}
+.poster{
+    height: 200px;
+}
+.poster-info{
+     color: #fff;
+}
+
+
+
+
+
+.filmes {
+    display: none;
+    padding: 20px;
+}
+
+.filmes.active {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; 
+    align-content: flex-start; 
+}
+
+.filme {
+    flex: 0 0 calc(24% - 10px);
+    text-align: center;
+    padding: 10px;
+    background-color: #28205a;
+    color: #fff;
+    margin: 5px;
+    position: relative;
+    transition: background-color 0.3s;
+}
+
+
+
+.filme img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.poster-info {
+    padding: 10px;
+}
+
+.filme:hover {
+    background-color: #60256e;
+} 
+
+.decade-filter {
+    background-color: #1a1535;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    display: inline-block;
+    float:  right;
+    margin-right: 10%;
+    margin-top: -40px;
+}
+
+.toggle-label {
+    cursor: pointer;
+    padding: 5px;
+    border: 1px solid #0b0b0b;
+    background-color: #28205a;
+    color: #fff;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked + .toggle-label {
+    background-color: #d83dff;
+    color: #fff;
+}
+
+.options {
+    display: none;
+    background-color: #28205a;
+    border: 1px solid #0b0b0b;
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+    padding: 5px;
+    
+}
+
+input[type="checkbox"]:checked + .toggle-label + .options {
+    display: block;
+}
+
+.options label {
+    display: block;
+    cursor: pointer;
+    padding: 5px;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.options label:hover {
+    background-color: #1a1535;
+}
+
+.hidden{
+    display: none;
 }
