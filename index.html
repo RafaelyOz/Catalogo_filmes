@@ -1,3 +1,34 @@
+<!-- 
+    A página que eu criei é sobre um catálogo de filmes chamado CineUnity.
+
+    Primeira atualização:
+
+    Criei os arquivos (html, css e Javascript)
+    ajustei a fonte no css e as margens
+    Iniciei o HTML fazendo uma barra de navegação, ordenando o nome do catálogo, barra de pesquisa, ícone lista de tarefas e o botões de login e registre -se
+    No css alinhei os elementos, adicionei cor.
+
+    Segunda atualização:
+
+    No HTML criei uma nova seção para começar os slides dos filmes recentes, coloquei as informações necessárias de cada filme e fiz um botão
+    No CSS alinhei, adicionei um overlay que ao colocar o mouse no filme aparece suas informações, também configurei as posições das fotos e estilizei o botão.
+    No JS adicionei as funcionalidades de marcar o slide selecionado indicando o primeiro slide, configurei o slide para ele passar por 8 segundos e quando ele finalizar voltar ao primeiro.
+
+    Terceira Atualização:
+
+    No HTML fiz uma guia de generos onde coloquei os generos que eu queria e depois fui especificando o conteudo de filmes de cada genero, e logo implementei um filtro por decadas que coloquei a partir dos anos 70 ate 2020
+    No CSS estilizei e alinhei os elementos, coloquei um efeito de cor nos filmes
+    No JS criei uma interatividade usando o ForEach para que quando selecionado o genero do filme abra uma aba dos correspondentes e para filtrar as decadas criei uma class chamada DecadeFilter para detectar as decadas quando usuario clicar ira filtrar o mostrar resultado.
+
+    Quarta Atualização:
+    No HTML criei uma nova seção para ser o carrosel de imagens dos filmes em destaque, fiz dois botoes e por fim fiz  o rodapé
+    No CSS estilizei e alinhei os elementos;
+    No JS adicionei funcionalidades aos botões;
+
+    Em todas as etapas adicionei imagens ou icones;
+   Arrumei a responsividade.
+-->
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -282,7 +313,7 @@
                         <p>2020</p>
                     </div>
                 </div>
-                
+
                 <div class="filme " data-decade="2023s" data-genero="comedia">
                     <img class="poster" src="./assets/paris 2.jpeg" alt="poster">
                     <div class="poster-info">
@@ -546,7 +577,7 @@
                         <p>1992</p>
                     </div>
                 </div>
-                
+
                 <div class="filme " data-decade="90s" data-genero="romance">
                     <img class="poster" src="./assets/uma linda mulher.jpeg" alt="poster">
                     <div class="poster-info">
@@ -560,7 +591,7 @@
                     <img class="poster" src="./assets/noivo neurotico.jpeg" alt="poster">
                     <div class="poster-info">
                         <p>Noivo Neurótico, Noiva Nervosa
-                            </p>
+                        </p>
                         <p>1977</p>
                     </div>
                 </div>
@@ -572,7 +603,7 @@
                         <p>1997</p>
                     </div>
                 </div>
-                
+
                 <div class="filme " data-decade="2000s" data-genero="romance">
                     <img class="poster" src="./assets/como perder.jpg" alt="poster">
                     <div class="poster-info">
@@ -580,7 +611,7 @@
                         <p>2003</p>
                     </div>
                 </div>
-                
+
                 <div class="filme " data-decade="2020s" data-genero="romance">
                     <img class="poster" src="./assets/after 2.jpeg" alt="poster">
                     <div class="poster-info">
@@ -588,7 +619,7 @@
                         <p>2023</p>
                     </div>
                 </div>
-                
+
             </div>
             <div class="filmes">
                 <div class="filme " data-decade="70s" data-genero="familia">
@@ -619,7 +650,7 @@
                     <img class="poster" src="./assets/matilda.jpeg" alt="poster">
                     <div class="poster-info">
                         <p>
-                         Matilda</p>
+                            Matilda</p>
                         <p>1996</p>
                     </div>
                 </div>
@@ -653,77 +684,77 @@
                         <p>2020</p>
                     </div>
                 </div>
+            </div>
+            <div class="filmes">
+                <div class="filme" data-decade="2000s" data-genero="terror">
+                    <img class="poster" src="./assets/a casa de cera.jpeg" alt="poster">
+                    <div class="poster-info">
+                        <p>A Casa de Cera</p>
+                        <p>2005</p>
+                    </div>
                 </div>
-                <div class="filmes">
-                    <div class="filme" data-decade="2000s" data-genero="terror">
-                        <img class="poster" src="./assets/a casa de cera.jpeg" alt="poster">
-                        <div class="poster-info">
-                            <p>A Casa de Cera</p>
-                            <p>2005</p>
-                        </div>
+
+                <div class="filme" data-decade="80s" data-genero="terror">
+                    <img class="poster" src="./assets/brinquedo ass.jpeg" alt="poster">
+                    <div class="poster-info">
+                        <p> Brinquedo Assassino</p>
+                        <p>1988</p>
                     </div>
-    
-                    <div class="filme" data-decade="80s" data-genero="terror">
-                        <img class="poster" src="./assets/brinquedo ass.jpeg" alt="poster">
-                        <div class="poster-info">
-                            <p> Brinquedo Assassino</p>
-                            <p>1988</p>
-                        </div>
+                </div>
+
+                <div class="filme " data-decade="2020s" data-genero="terror">
+                    <img class="poster" src="./assets/freira.jpeg" alt="poster">
+                    <div class="poster-info">
+                        <p>A Freira 2</p>
+                        <p>2023</p>
                     </div>
-    
-                    <div class="filme " data-decade="2020s" data-genero="terror">
-                        <img class="poster" src="./assets/freira.jpeg" alt="poster">
-                        <div class="poster-info">
-                            <p>A Freira 2</p>
-                            <p>2023</p>
-                        </div>
+                </div>
+
+                <div class="filme " data-decade="2010s" data-genero="terror">
+                    <img class="poster" src="./assets/invocacao.jpeg" alt="poster">
+                    <div class="poster-info">
+                        <p>
+                            Invocação do Mal</p>
+                        <p>2013</p>
                     </div>
-    
-                    <div class="filme " data-decade="2010s" data-genero="terror">
-                        <img class="poster" src="./assets/invocacao.jpeg" alt="poster">
-                        <div class="poster-info">
-                            <p>
-                             Invocação do Mal</p>
-                            <p>2013</p>
-                        </div>
+                </div>
+
+                <div class="filme " data-decade="90s" data-genero="terror">
+                    <img class="poster" src="./assets/hora do  pesadelo.jpeg" alt="poster">
+                    <div class="poster-info">
+                        <p>A Hora do Pesadelo 6 - Pesadelo Final </p>
+                        <p>1991</p>
                     </div>
-    
-                    <div class="filme " data-decade="90s" data-genero="terror">
-                        <img class="poster" src="./assets/hora do  pesadelo.jpeg" alt="poster">
-                        <div class="poster-info">
-                            <p>A Hora do Pesadelo 6 - Pesadelo Final </p>
-                            <p>1991</p>
-                        </div>
+                </div>
+
+                <div class="filme " data-decade="2000s" data-genero="terror">
+                    <img class="poster" src="./assets/o chamado.jpeg" alt="poster">
+                    <div class="poster-info">
+                        <p> O Chamado</p>
+                        <p>2002</p>
                     </div>
-    
-                    <div class="filme " data-decade="2000s" data-genero="terror">
-                        <img class="poster" src="./assets/o chamado.jpeg" alt="poster">
-                        <div class="poster-info">
-                            <p> O Chamado</p>
-                            <p>2002</p>
-                        </div>
+                </div>
+                <div class="filme " data-decade="70s" data-genero="terror">
+                    <img class="poster" src="./assets/o exorcista.jpeg" alt="poster">
+                    <div class="poster-info">
+                        <p>O Exorcista</p>
+                        <p>1973</p>
                     </div>
-                    <div class="filme " data-decade="70s" data-genero="terror">
-                        <img class="poster" src="./assets/o exorcista.jpeg" alt="poster">
-                        <div class="poster-info">
-                            <p>O Exorcista</p>
-                            <p>1973</p>
-                        </div>
+                </div>
+                <div class="filme " data-decade="90s" data-genero="terror">
+                    <img class="poster" src="./assets/panico.jpeg" alt="poster">
+                    <div class="poster-info">
+                        <p>Pânico</p>
+                        <p>1996</p>
                     </div>
-                    <div class="filme " data-decade="90s" data-genero="terror">
-                        <img class="poster" src="./assets/panico.jpeg" alt="poster">
-                        <div class="poster-info">
-                            <p>Pânico</p>
-                            <p>1996</p>
-                        </div>
+                </div>
+                <div class="filme " data-decade="2020s" data-genero="terror">
+                    <img class="poster" src="./assets/fnaf 2.jpg" alt="poster">
+                    <div class="poster-info">
+                        <p>Five Nights at Freddy's - O Pesadelo Sem Fim</p>
+                        <p>2023</p>
                     </div>
-                    <div class="filme " data-decade="2020s" data-genero="terror">
-                        <img class="poster" src="./assets/fnaf 2.jpg" alt="poster">
-                        <div class="poster-info">
-                            <p>Five Nights at Freddy's - O Pesadelo Sem Fim</p>
-                            <p>2023</p>
-                        </div>
-                    </div>
+                </div>
 
             </div>
             <div class="filmes">
@@ -755,7 +786,7 @@
                     <img class="poster" src="./assets/garota.jpeg" alt="poster">
                     <div class="poster-info">
                         <p>
-                         Garota Exemplar</p>
+                            Garota Exemplar</p>
                         <p>2014</p>
                     </div>
                 </div>
@@ -790,122 +821,122 @@
                     </div>
                 </div>
 
+            </div>
+            <div class="filmes">
+                <div class="filme" data-decade="2000s" data-genero="musical">
+                    <img class="poster" src="./assets/DVD_High_School_Musical.jpeg" alt="poster">
+                    <div class="poster-info">
+                        <p>High School Musical</p>
+                        <p>2006</p>
+                    </div>
+                </div>
+
+                <div class="filme" data-decade="80s" data-genero="musical">
+                    <img class="poster" src="./assets/flashdance.jpeg" alt="poster">
+                    <div class="poster-info">
+                        <p>Flashdance - Em Ritmo de Embalo</p>
+                        <p>1983</p>
+                    </div>
+                </div>
+
+                <div class="filme " data-decade="2000s" data-genero="musical">
+                    <img class="poster" src="./assets/fanatasma opera.jpeg" alt="poster">
+                    <div class="poster-info">
+                        <p>O Fantasma da Ópera</p>
+                        <p>2004</p>
+                    </div>
+                </div>
+
+                <div class="filme " data-decade="70s" data-genero="musical">
+                    <img class="poster" src="./assets/grease.jpeg" alt="poster">
+                    <div class="poster-info">
+                        <p>
+                            Grease</p>
+                        <p>1978</p>
+                    </div>
+                </div>
+
+                <div class="filme " data-decade="2010s" data-genero="musical">
+                    <img class="poster" src="./assets/lala.jpeg" alt="poster">
+                    <div class="poster-info">
+                        <p>La La Land: Cantando Estações </p>
+                        <p>2016</p>
+                    </div>
+                </div>
+
+                <div class="filme " data-decade="90s" data-genero="suspense">
+                    <img class="poster" src="./assets/mulan.jpeg" alt="poster">
+                    <div class="poster-info">
+                        <p> Mulan</p>
+                        <p>1998</p>
+                    </div>
+                </div>
+                <div class="filme " data-decade="2010s" data-genero="suspense">
+                    <img class="poster" src="./assets/queen.jpeg" alt="poster">
+                    <div class="poster-info">
+                        <p>Bohemian Rhapsody</p>
+                        <p>2018</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="filmes">
-            <div class="filme" data-decade="2000s" data-genero="musical">
-                <img class="poster" src="./assets/DVD_High_School_Musical.jpeg" alt="poster">
-                <div class="poster-info">
-                    <p>High School Musical</p>
-                    <p>2006</p>
-                </div>
-            </div>
 
-            <div class="filme" data-decade="80s" data-genero="musical">
-                <img class="poster" src="./assets/flashdance.jpeg" alt="poster">
-                <div class="poster-info">
-                    <p>Flashdance - Em Ritmo de Embalo</p>
-                    <p>1983</p>
-                </div>
-            </div>
 
-            <div class="filme " data-decade="2000s" data-genero="musical">
-                <img class="poster" src="./assets/fanatasma opera.jpeg" alt="poster">
-                <div class="poster-info">
-                    <p>O Fantasma da Ópera</p>
-                    <p>2004</p>
-                </div>
-            </div>
-
-            <div class="filme " data-decade="70s" data-genero="musical">
-                <img class="poster" src="./assets/grease.jpeg" alt="poster">
-                <div class="poster-info">
-                    <p>
-                     Grease</p>
-                    <p>1978</p>
-                </div>
-            </div>
-
-            <div class="filme " data-decade="2010s" data-genero="musical">
-                <img class="poster" src="./assets/lala.jpeg" alt="poster">
-                <div class="poster-info">
-                    <p>La La Land: Cantando Estações </p>
-                    <p>2016</p>
-                </div>
-            </div>
-
-            <div class="filme " data-decade="90s" data-genero="suspense">
-                <img class="poster" src="./assets/mulan.jpeg" alt="poster">
-                <div class="poster-info">
-                    <p> Mulan</p>
-                    <p>1998</p>
-                </div>
-            </div>
-            <div class="filme " data-decade="2010s" data-genero="suspense">
-                <img class="poster" src="./assets/queen.jpeg" alt="poster">
-                <div class="poster-info">
-                    <p>Bohemian Rhapsody</p>
-                    <p>2018</p>
-                </div>
-            </div>
-    </div>
-        </div>
-
-   
-</section>
-<section>
-    <section class="movie-carousel">
-        <h2>Filmes em Destaque</h2>
-        <div class="carousel-container">
-            
-            <div class="movie-slide">
-                <img class="poster-destaque"  src="./assets/after 2.jpeg" alt="Filme 1">
-                <h3>After - Para Sempre </h3>
-            </div>
-            <div class="movie-slide">
-                <img  class="poster-destaque" src="./assets/besouro azul 2.jpeg" alt="Filme 2">
-                <h3>Besouro Azul</h3>
-            </div>
-            <div class="movie-slide">
-                <img  class="poster-destaque" src="./assets/panico.jpeg" alt="Filme 3">
-                <h3>Pânico</h3>
-            </div>
-            <div class="movie-slide">
-                <img   class="poster-destaque"src="./assets/as-branquelas-cartaz.jpg" alt="Filme 4">
-                <h3>As Branquelas</h3>
-            </div>
-            
-        </div>
-        <button class="prev-button" onclick="prevSlide()">&#10094;</button>
-        <button class="next-button" onclick="nextSlide()">&#10095;</button>
     </section>
-    
-</section>
-
-<footer class="footer">
     <section>
-    <div class="container">
-        <div class="footer-content">
-            <div class="footer-logo">
-                <h1 class="cineUnity">CineUnity</h1>
+        <section class="movie-carousel">
+            <h2>Filmes em Destaque</h2>
+            <div class="carousel-container">
+
+                <div class="movie-slide">
+                    <img class="poster-destaque" src="./assets/after 2.jpeg" alt="Filme 1">
+                    <h3>After - Para Sempre </h3>
+                </div>
+                <div class="movie-slide">
+                    <img class="poster-destaque" src="./assets/besouro azul 2.jpeg" alt="Filme 2">
+                    <h3>Besouro Azul</h3>
+                </div>
+                <div class="movie-slide">
+                    <img class="poster-destaque" src="./assets/panico.jpeg" alt="Filme 3">
+                    <h3>Pânico</h3>
+                </div>
+                <div class="movie-slide">
+                    <img class="poster-destaque" src="./assets/as-branquelas-cartaz.jpg" alt="Filme 4">
+                    <h3>As Branquelas</h3>
+                </div>
+
             </div>
-            <div class="footer-links">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Sobre nós</a></li>
-                    <li><a href="#">Contato</a></li>
-                </ul>
-            </div>
-            <div class="footer-social">
-                <ul>
-                    <li><a href="#" target="_blank"><img src="./assets/facebook.svg" alt="Facebook"></a></li>
-                    <li><a href="#" target="_blank"><img src="./assets/twitter-1.svg" alt="Twitter"></a></li>
-                    <li><a href="#" target="_blank"><img src="./assets/instagram.svg" alt="Instagram"></a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
+            <button class="prev-button" onclick="prevSlide()">&#10094;</button>
+            <button class="next-button" onclick="nextSlide()">&#10095;</button>
+        </section>
+
     </section>
-</footer>
+
+    <footer class="footer">
+        <section>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-logo">
+                        <h1 class="cineUnity">CineUnity</h1>
+                    </div>
+                    <div class="footer-links">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Sobre nós</a></li>
+                            <li><a href="#">Contato</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-social">
+                        <ul>
+                            <li><a href="#" target="_blank"><img src="./assets/facebook.svg" alt="Facebook"></a></li>
+                            <li><a href="#" target="_blank"><img src="./assets/twitter-1.svg" alt="Twitter"></a></li>
+                            <li><a href="#" target="_blank"><img src="./assets/instagram.svg" alt="Instagram"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
 
 
 
